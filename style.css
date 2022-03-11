@@ -1,0 +1,71 @@
+label {
+    display: inline-block;
+    height: 40px;
+    width: 100px;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    text-align: center;
+    line-height: 40px;
+}
+
+label:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    background: #aaa;
+}
+
+#print-button {
+    height: 40px;
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+#print-button:hover {
+    background-color: #aaa;
+}
+
+#print-button:active {
+    background-color: #999;
+}
+
+#print-div {
+    width: 400px;
+    display: none;
+    position: relative;
+}
+
+#print-div img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+#print-div p {
+    position: absolute;
+    margin: 0;
+    top: 10px;
+    left: 10px;
+    font-size: 60px;
+    color: black;
+}
+
+@media print {
+    .no-print {
+        display: none;
+    }
+    #print-div {
+        display: block;
+    }
+}
+  
