@@ -9,7 +9,7 @@ printButton.addEventListener('click', () => {
     const printText1 = document.getElementById("print-text-1");
     const printText2 = document.getElementById("print-text-2");
     const printText3 = document.getElementById("print-text-3");
-    const result = Math.ceil( (parseFloat(valueA) * parseFloat(valueB) / 10) ).toString();
+    const result = Math.floor( (parseFloat(valueA) * parseFloat(valueB) / 10) ).toString();
 
     printText1.innerHTML = optionA;
     printText2.innerHTML = optionB;
