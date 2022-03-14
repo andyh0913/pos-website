@@ -1,12 +1,16 @@
+:root {
+    --font-size: 18px;
+}
+
 label {
     display: inline-block;
-    height: 40px;
-    width: 100px;
+    height: 3rem;
+    width: 8rem;
     margin-bottom: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 0.5rem;
     text-align: center;
-    line-height: 40px;
+    line-height: 3rem;
 }
 
 label:hover {
@@ -51,12 +55,30 @@ input[type="radio"]:checked + label {
     height: auto;
 }
 
-#print-div p {
+#print-text-1 {
     position: absolute;
     margin: 0;
-    top: 10px;
-    left: 10px;
-    font-size: 60px;
+    top: 455px;
+    left: 195px;
+    font-size: var(--font-size);
+    color: black;
+}
+
+#print-text-2 {
+    position: absolute;
+    margin: 0;
+    top: 507px;
+    left: 195px;
+    font-size: var(--font-size);
+    color: black;
+}
+
+#print-text-3 {
+    position: absolute;
+    margin: 0;
+    top: 609px;
+    left: 154px;
+    font-size: var(--font-size);
     color: black;
 }
 
